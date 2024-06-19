@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mitchell's Website <3</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+
+
+  <script>
+    function checkAnswer()
+    {
+      var userInput = document.getElementById('nicknameInput').value.toLowerCase();
+      var specificAnswer = 'chellam';
+
+      if (userInput === specificAnswer)
+      {
+        document.getElementById('secretDiv').style.display = 'block';
+        alert('Correct answer! You may proceed.');
+      }
+      else
+      {
+        document.getElementById('secretDiv').style.display = 'none';
+        alert('Please enter the correct nickname.');
+      }
+    }
+
+    function showMessage()
+    {
+      document.getElementById('theAnswer').style.display = 'block';
+    }
+  </script>
+
+</head>
+<body style="background-color: #EFCAEC;">
+
+
+  <div class="overallBox">
+
+    <div class="introPart">
+      <h1>hi mitchell :)</h1>
+      <img src="assets/intro.png">
+      <h1>this is a highly secret page</h1>
+      <h1>you are the only one that can unlock this webiste, but you must answer a riddle first!!!</h1>
+    </div>
+
+    <div class="addBox">
+      <div class="riddlePart">
+        <h2>
+          I'm a term of endearment, unique and sweet,
+          <br>
+          For my love, it's a name that's hard to beat.
+          <br>
+          Short and dear, it's my favorite delight,
+          <br>
+          What nickname do I whisper at night?
+        </h2>
+      </div>
+
+      <div>
+        <label for="nicknameInput">Enter your answer:</label><br>
+        <input type="text" id="nicknameInput"><br>
+        <button onclick="checkAnswer()">Enter</button>
+      </div>
+    </div>
+
+    <div class="answerPart">
+      <div id="secretDiv" style="display: none; border: 2px solid white; padding: 20px; margin: 20px;">
+        <p>Click the button below to get the answer to your coupon :) </p>
+        <button onclick="showMessage()">Will sham come to your house on 27th?</button>
+        <div id="theAnswer" style="display: none;">
+          <p>hell yeah she will! (after convincing her parents)</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+</html>

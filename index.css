@@ -1,0 +1,35 @@
+*
+{
+  text-align: center;
+}
+
+.overallBox
+{
+  border: 0px; /* Border style */
+  margin: 20px; /* Optional: Space below the box */
+}
+
+.introPart
+{
+  color: black;
+  font-size: 90%;
+}
+
+.addBox
+{
+  border: 2px solid white; /* Border style */
+  padding: 15px; /* Padding inside the box */
+  margin: 20px; /* Optional: Space below the box */
+}
+
+.riddlePart
+{
+  color: black;
+  font-size: 70%;
+}
+
+.answerPart
+{
+  color: black;
+  font-size: 12px;
+}
